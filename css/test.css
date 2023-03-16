@@ -1,0 +1,16 @@
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: dashed red;
+}
+@media (min-width: 428px) {
+  .container {
+    width: 396px;
+    /* padding-left: 16px;
+    padding-right: 16px; */
+    /* padding: 0 16px; */
+    /* margin: 0 auto; */
+    /* outline: dashed red; */
+  }
+}
