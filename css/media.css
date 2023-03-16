@@ -6,8 +6,11 @@
     outline: dashed red;
   }
   .team-container-low {
-    width: 294px;
+    width: 290px;
   }
+  /* .footer-div {
+    width: 268px;
+  } */
 }
 
 @media screen and (min-width: 768px) {
@@ -31,6 +34,7 @@
   .section-subtitle {
     text-align: left;
   }
+
   /* section team */
 
   .section-team {
@@ -44,6 +48,9 @@
     flex-wrap: wrap;
   }
 
+  .our-team-card .card-team:not(:last-child) {
+    margin-bottom: 0;
+  }
   /* .our-team-card .card-team {
     margin-bottom: 64px;
   } */
@@ -56,9 +63,82 @@
   .our-team-card .card-team:nth-child(2) {
     margin-bottom: 64px;
   }
-  .our-team-card .card-team:last-child {
+  /* .our-team-card .card-team:last-child {
     margin-bottom: 0;
+  } */
+
+  /* customers */
+  .section-customers .container {
+    width: 552px;
   }
+  .customers-list {
+    gap: 24px;
+  }
+  .customers-list .item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  /* footer */
+  .footer-our .container {
+    width: 496px;
+  }
+  /* .footer-flex {
+    display: flex;
+  } */
+  /* .footer-our {
+    background-color: var(--text-head-line-color);
+    padding: 100px 0;
+  }
+
+  .footer-logo-second-part {
+    color: var(--background-color-section-team);
+  }
+  .footer-text {
+    width: 264px;
+    margin-top: 16px;
+  }
+  .footer-our .footer-text {
+    color: var(--footer-color-paragraph);
+  }
+  .footer-flex {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-div {
+    margin-right: 120px;
+  }
+  .footer-subtitle {
+    color: var(--background-color);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  .footer-list {
+    display: flex;
+    padding: 0;
+    gap: 16px;
+  }
+  .footer-list-svg {
+    width: 24px;
+    height: 24px;
+  }
+  .footer-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-link:hover,
+  .footer-link:focus {
+    background-color: #31d0aa;
+  } */
 }
 
 @media screen and (min-width: 1200px) {
