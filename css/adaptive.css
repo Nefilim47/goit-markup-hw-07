@@ -219,7 +219,7 @@ a {
 /* Section hero */
 .section-hero {
   background-color: var(--text-head-line-color);
-  padding: 112px 0 128px 0;
+  padding: 112px 0;
   text-align: center;
 
   /* max-width: 428px; */
@@ -800,17 +800,20 @@ a {
 /* PORTFOLIO */
 
 .filter {
-  padding: 96px 0 120px;
+  padding: 48px 0;
 }
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 72px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  /* justify-content: center;
+  margin-bottom: 72px; */
 
   /* margin: 96px auto 72px; */
 }
 .filter-list .item + .item {
   margin-left: 24px;
+  margin-bottom: 16px;
 }
 .filter-button {
   font-weight: 500;
@@ -823,7 +826,7 @@ a {
   border-radius: 4px;
   cursor: pointer;
   letter-spacing: 0.04em;
-  padding: 12px 24px;
+  padding: 8px 16px;
   border: 1px solid var(--footer-color-paragraph);
 
   transition-property: background-color, color;
@@ -837,13 +840,13 @@ a {
   color: var(--background-color);
 }
 
-.posts {
+/* .posts {
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
 .posts .item {
-  margin-right: 24px;
+  /* margin-right: 24px; */
   margin-bottom: 48px;
 
   overflow: hidden;
@@ -866,6 +869,13 @@ a {
   border: 1px solid var(--footer-color-paragraph);
   border-top: none;
   padding: 32px 0 32px 16px;
+}
+.posts .section-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left;
+  letter-spacing: 0.02em;
 }
 
 /* Overlay text posts */
