@@ -23,44 +23,6 @@
     <div class="container header-flex">
       <nav class="navigation">
         <a href="./index.html" class="logo-first-part">Web<span class="header-logo-second-part">Studio</span></a>
-        <button type="button" class="button-menu-open" data-menu-open>
-          <svg class="menu-button">
-            <use href="./images/symbol-defs.svg#icon-menu-open"></use>
-          </svg>
-        </button>
-        <div class="mobile-menu is-hidden" data-menu>
-          <button type="button" class="button-menu-close" data-menu-close>
-            <svg class="menu-button" width="40" height="40">
-              <use href="./images/symbol-defs.svg#icon-username"></use>
-            </svg>
-          </button>
-          <div>
-            <ul class="mobile-menu-list list">
-              <li class="item">
-                <a href="./index.html" class="mobile-menu-link underline-navigation">Studio</a>
-              </li>
-              <li class="item">
-                <a href="./portfolio.html" class="mobile-menu-link">Portfolio</a>
-              </li>
-              <li class="item">
-                <a href="./test.html" class="mobile-menu-link">Contacts</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <address>
-              <ul class="mobile-menu-adress">
-                <li class="item">
-                  <a href="mailto:info@devstudio.com" class="mobile-menu-email">info@devstudio.com</a>
-                </li>
-                <li class="item">
-                  <a href="tel:+110001111111" class="mobile-menu-phone-number">
-                    +11 (000) 111-11-11</a>
-                </li>
-              </ul>
-            </address>
-          </div>
-        </div>
         <ul class="navigation-site list">
           <li class="item">
             <a href="./index.html" class="link underline-navigation">Studio</a>
@@ -84,6 +46,69 @@
           </li>
         </ul>
       </address>
+      <button type="button" class="button-menu-open" data-menu-open>
+        <svg class="menu-button-svg">
+          <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="button-menu-close" data-menu-close>
+            <svg class="menu-button-close-svg">
+              <use href="./images/symbol-defs.svg#icon-close-svg"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-list list">
+            <li class="item">
+              <a href="./index.html" class="mobile-menu-link section-subtitle">Studio</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="mobile-menu-link section-subtitle">Portfolio</a>
+            </li>
+            <li class="item">
+              <a href="./test.html" class="mobile-menu-link section-subtitle">Contacts</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-container">
+          <address>
+            <ul class="mobile-menu-adress list">
+              <li class="item">
+                <a href="tel:+110001111111" class="mobile-menu-phone-number">
+                  +11 (000) 111-11-11</a>
+              </li>
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="mobile-menu-email">info@devstudio.com</a>
+              </li>
+
+            </ul>
+          </address>
+          <ul class="list social-list">
+            <li class="social-item">
+              <a class="social-link" href=""><svg class="team-social">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href=""><svg class="team-social">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href=""><svg class="team-social">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href=""><svg class="team-social">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     </div>
   </header>
   <main>
@@ -393,7 +418,7 @@
       </div>
     </div>
   </footer>
-  <div class="backdrop is-hidden" data-menu>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button data-modal-close type="button" class="modal-button-exit">
         <svg class="svg-button">

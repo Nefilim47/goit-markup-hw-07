@@ -49,6 +49,8 @@ body {
   text-align: center;
 } */
 .section-subtitle {
+  font-weight: 700;
+
   font-size: 36px;
   line-height: 1.11;
   margin-bottom: 8px;
@@ -87,11 +89,13 @@ a {
 /* Header */
 .header-our {
   border-bottom: 1px solid var(--footer-color-paragraph);
+  /* height: 70px; */
 }
 
 .header-flex {
   display: flex;
   align-items: center;
+  margin: 24px 0;
 }
 
 .logo-first-part {
@@ -120,20 +124,22 @@ a {
   display: none;
 }
 /* menu mobile */
-.menu-button {
-  width: 22px;
-  height: 32px;
-  stroke: red;
+.menu-button-svg {
+  width: 32px;
+  height: 22px;
+  stroke: var(--text-head-line-color);
 }
-.button-menu {
+.button-menu-open {
   display: block;
-  margin-right: auto;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
 }
 .mobile-menu {
   position: fixed;
   top: 0;
   z-index: 1;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background-color: red;
   padding: 40px;
@@ -141,21 +147,60 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: auto;
+
+  background: var(--background-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 .button-menu-close {
   margin-left: auto;
   display: block;
-  background-color: transparent;
+  background-color: var(--footer-color-paragraph);
   border: none;
+  margin-bottom: 40px;
+  border-radius: 50%;
+
+  width: 24px;
+  height: 24px;
 }
-.mobile-menu-list {
+.menu-button-close-svg {
+  width: 8px;
+  height: 8px;
 }
+
 .mobile-menu-list .item:not(:last-child) {
   margin-bottom: 40px;
 }
 .mobile-menu-adress {
+  margin-bottom: 48px;
+}
+.mobile-menu-adress > .item {
+  margin-top: 40px;
+}
+.mobile-menu-phone-number {
+  /* .mobile-menu-adress { */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.11;
+
+  text-transform: capitalize;
+
+  color: var(--button-main-color);
 }
 
+.mobile-menu-email {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--text-paragraph-color);
+}
 /* Main */
 /* Section one */
 .section-title {
