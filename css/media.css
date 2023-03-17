@@ -8,6 +8,16 @@
   .team-container-low {
     width: 290px;
   }
+
+  .section-hero {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background-tab.jpg);
+  }
   /* .footer-div {
     width: 268px;
   } */
@@ -20,9 +30,88 @@
     margin: 0 auto;
     /* outline: dashed red; */
   }
+  /* header */
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation-site {
+    display: flex;
+  }
+
+  .navigation-site .item + .item {
+    margin-left: 40px;
+  }
+
+  .navigation-site .link {
+    display: block;
+    position: relative;
+
+    font-weight: 500;
+    color: var(--text-head-line-color);
+    padding: 24px 0;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Underline navigation */
+  .item .underline-navigation {
+    color: var(--button-hover-color);
+  }
+  .underline-navigation::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--button-hover-color);
+    border-radius: 2px;
+
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+  }
+
+  .navigation-site .link:hover,
+  .navigation-site .link:focus {
+    color: var(--button-hover-color);
+  }
+  /* Adress */
+
+  .address-flex {
+    display: flex;
+  }
+
+  .address-flex .item + .item {
+    margin-left: 40px;
+  }
+
+  .address {
+    margin-left: auto;
+  }
+  .email,
+  .phone-number {
+    color: var(--text-paragraph-color);
+    font-style: normal;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .address-flex .email:hover,
+  .address-flex .email:focus,
+  .address-flex .phone-number:hover,
+  .address-flex .phone-number:focus {
+    color: var(--button-hover-color);
+  }
+
   /* section hero */
   .section-hero {
     padding: 111px 0 108px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background.jpg);
   }
   .future-list {
     display: flex;
@@ -133,6 +222,7 @@
   .section-hero {
     padding: 185px 0;
   }
+
   .hero-title {
     font-size: 56px;
     line-height: 1.1;
@@ -318,7 +408,6 @@
     line-height: 1.5;
     font-family: inherit;
     padding: 12px 24px;
-      letter-spacing: 0.04em;
-
+    letter-spacing: 0.04em;
   }
 }

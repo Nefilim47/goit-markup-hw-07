@@ -109,83 +109,51 @@ a {
   color: var(--text-head-line-color);
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.navigation-site {
-  display: flex;
-}
-
-.navigation-site .item + .item {
-  margin-left: 40px;
-}
-
-.navigation-site .link {
-  display: block;
-  position: relative;
-
-  font-weight: 500;
-  color: var(--text-head-line-color);
-  padding: 24px 0;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Underline navigation */
-.item .underline-navigation {
-  color: var(--button-hover-color);
-}
-.underline-navigation::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--button-hover-color);
-  border-radius: 2px;
-
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-}
-
-.navigation-site .link:hover,
-.navigation-site .link:focus {
-  color: var(--button-hover-color);
-}
-
 .list {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* Adress */
-
-.address-flex {
-  display: flex;
-}
-
-.address-flex .item + .item {
-  margin-left: 40px;
-}
-
+.navigation-site,
 .address {
-  margin-left: auto;
+  display: none;
 }
-.email,
-.phone-number {
-  color: var(--text-paragraph-color);
-  font-style: normal;
+/* menu mobile */
+.menu-button {
+  width: 22px;
+  height: 32px;
+  stroke: red;
+}
+.button-menu {
+  display: block;
+  margin-right: auto;
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100%;
+  background-color: red;
+  padding: 40px;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.address-flex .email:hover,
-.address-flex .email:focus,
-.address-flex .phone-number:hover,
-.address-flex .phone-number:focus {
-  color: var(--button-hover-color);
+.button-menu-close {
+  margin-left: auto;
+  display: block;
+  background-color: transparent;
+  border: none;
+}
+.mobile-menu-list {
+}
+.mobile-menu-list .item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mobile-menu-adress {
 }
 
 /* Main */
@@ -216,6 +184,7 @@ a {
 .header-logo-second-part {
   color: var(--text-head-line-color);
 }
+
 /* Section hero */
 .section-hero {
   background-color: var(--text-head-line-color);
@@ -225,12 +194,15 @@ a {
   /* max-width: 428px; */
   margin-left: auto;
   margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-image: linear-gradient(
       to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background.jpg);
+    url(../images/background-mob.jpg);
 }
 .hero-title {
   font-size: 36px;
@@ -275,7 +247,7 @@ a {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
