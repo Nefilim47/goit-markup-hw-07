@@ -79,7 +79,7 @@ body {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  outline: dashed red;
+  /* outline: dashed red; */
 }
 
 a {
@@ -138,6 +138,7 @@ a {
 .mobile-menu {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -159,13 +160,17 @@ a {
   display: block;
   background-color: var(--footer-color-paragraph);
   border: none;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
   border-radius: 50%;
 
   width: 24px;
   height: 24px;
 }
 .menu-button-close-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 8px;
   height: 8px;
 }

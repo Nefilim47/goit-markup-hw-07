@@ -3,10 +3,14 @@
     width: 426px;
     padding: 0 15px;
     margin: 0 auto;
-    outline: dashed red;
+    /* outline: dashed red; */
   }
   .team-container-low {
     width: 290px;
+  }
+  .header-our .container {
+    width: auto;
+    margin: 24px 0;
   }
 
   .section-hero {
@@ -31,6 +35,11 @@
     /* outline: dashed red; */
   }
   /* header */
+
+  .header-our .container {
+    width: auto;
+    margin: 0px;
+  }
   .navigation {
     display: flex;
     align-items: center;
@@ -230,8 +239,9 @@
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-    outline: dashed red;
+    /* outline: dashed red; */
   }
+
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
