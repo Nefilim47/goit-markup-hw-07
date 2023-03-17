@@ -581,7 +581,11 @@ a {
   margin: 8px 0;
 }
 /* SOCIAL */
-
+.social-list-menu {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+}
 .social-list {
   display: flex;
   gap: 24px;
