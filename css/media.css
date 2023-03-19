@@ -43,15 +43,15 @@
     width: 290px;
   }
 
-  .section-hero {
+  /* .section-hero {
     background-repeat: no-repeat;
     background-image: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/background-tab.jpg);
-  }
+      url(../images/background-.jpg);
+  } */
   .modal-button-send {
     width: 169px;
     height: 56px;
@@ -205,8 +205,21 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/background.jpg);
+      url(../images/background-tab.jpg);
   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background-tab-2x.jpg);
+    }
+  }
+
   .hero-title {
     font-size: 56px;
     max-width: 494px;
@@ -391,6 +404,24 @@
   .section-hero {
     max-width: 1440px;
     padding: 185px 0;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background-2x.jpg);
+    }
   }
 
   /* section about */
